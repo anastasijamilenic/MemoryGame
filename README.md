@@ -1,6 +1,8 @@
     Po pokretanju igre, na ekranu će biti prikazane kartice koje su u početku okrenute prema dole.
     Svaka kartica sadrži sliku koja je skrivena sve dok je ne okrenete.
-    ![Screenshot (72)](https://github.com/user-attachments/assets/137c91d7-ed3d-4593-ac4c-865809345aee)
+
+   
+![Screenshot (72)](https://github.com/user-attachments/assets/30147460-0288-4960-b3c2-f5d512e71785)
 
 
 Izbor težine igre
@@ -49,6 +51,7 @@ Pobjednička poruka
 
 
     Igra se završava kada svi parovi kartica budu upareni.
-    ![Screenshot (51)](https://github.com/user-attachments/assets/74a38b9e-79e7-4dde-8636-fb22053dfa51)
+  ![Screenshot (51)](https://github.com/user-attachments/assets/79da6bf5-24a9-4301-b6a4-55e5fc17bd02)
+
 
     Na kraju, igrač će videti poruku koja mu čestita na pobjedi, zajedno sa vremenom i brojem poteza koje je iskoristio da završi igru.
