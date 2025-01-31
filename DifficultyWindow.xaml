@@ -1,0 +1,14 @@
+﻿<Window x:Class="MemoryGame.DifficultyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Select Difficulty" Height="200" Width="300">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="Select Difficulty Level:" FontSize="16" Margin="10" />
+        <ComboBox Name="DifficultyComboBox" Width="150" Margin="10">
+            <ComboBoxItem Content="Easy (4x4)" Tag="4" />
+            <ComboBoxItem Content="Medium (6x6)" Tag="6" />
+            <ComboBoxItem Content="Hard (8x8)" Tag="8" />
+        </ComboBox>
+        <Button Content="Start Game" Click="StartButton_Click" Width="100" Margin="10" />
+    </StackPanel>
+</Window>

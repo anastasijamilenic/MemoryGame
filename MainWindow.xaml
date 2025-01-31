@@ -1,0 +1,35 @@
+﻿<Window x:Class="MemoryGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Memory Card Game" Height="450" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Difficulty Selection -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10" Grid.Row="0">
+            <TextBlock Text="Select Difficulty: " FontSize="16" VerticalAlignment="Center" />
+            <ComboBox Name="DifficultyComboBox" FontSize="16" Padding="10,5" Margin="10,0,0,0" SelectionChanged="DifficultyComboBox_SelectionChanged">
+                <ComboBoxItem Content="Easy (4x4)" Tag="4" />
+                <ComboBoxItem Content="Medium (6x6)" Tag="6" />
+                <ComboBoxItem Content="Hard (8x8)" Tag="8" />
+            </ComboBox>
+        </StackPanel>
+
+        <!-- Timer, Move Counter, Pause, and Restart Buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10" Grid.Row="1">
+            <TextBlock Name="TimerText" FontSize="20" Margin="0,0,20,0" />
+            <TextBlock Name="MoveCounterText" FontSize="20" Margin="0,0,20,0" Text="Moves: 0" />
+            <Button Name="PauseButton" Content="Pause" FontSize="16" Padding="10,5" Margin="0,0,10,0" Click="PauseButton_Click" />
+            <Button Name="RestartButton" Content="Restart" FontSize="16" Padding="10,5" Click="RestartButton_Click" />
+        </StackPanel>
+
+        <!-- Card Grid -->
+        <Grid Name="CardGrid" Margin="10" Grid.Row="2">
+            <!-- Cards will be added dynamically in code-behind -->
+        </Grid>
+    </Grid>
+</Window>
